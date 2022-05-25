@@ -4,7 +4,7 @@ $LocalPath = 'C:\\fslogix'
 $AVDflogixURL = 'https://github.com/seb1999/avd/master/PowerShell/FSLogixSetup.ps1'
 $AVDFslogixInstaller = 'FSLogixSetup.ps1'
 $outputPath = $LocalPath + '\' + $AVDFslogixInstaller
-Invoke-WebRequest -Uri $WVDflogixURL -OutFile $outputPath
+Invoke-WebRequest -Uri $AVDflogixURL -OutFile $outputPath
 set-Location $LocalPath
 
 $fsLogixURL="https://aka.ms/fslogix_download"
