@@ -1,17 +1,6 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-      "imageTemplateName": {
-        "type": "string"
-        },
-        "api-version": {
-          "type": "string"
-        },
-        "svclocation": {
-            "type": "string"
-        }
-    },
     
     "variables": {
     },
@@ -49,8 +38,7 @@
                 "type": "PlatformImage",
                     "publisher": "MicrosoftWindowsDesktop",
                     "offer": "Windows-11",
-                    "sku": "win11-21h2-avd",
-                    "version": "latest"
+                    "sku": "win11-21h2-avd"
             },
             "customize": [
 
