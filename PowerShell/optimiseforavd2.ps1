@@ -33,3 +33,5 @@ $insert | ForEach-Object { $file.insert($_,"                 Write-Host 'Patch c
 set-Content $updatePath $file
 
 .\Windows_VDOT.ps1 -Optimizations All -AdvancedOptimizations Edge, RemoveOneDrive -Verbose -AcceptEula
+
+shutdown -r -f -t 00
