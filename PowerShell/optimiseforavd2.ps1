@@ -32,4 +32,4 @@ for ($i=0; $i -lt $file.count; $i++) {
 $insert | ForEach-Object { $file.insert($_,"                 Write-Host 'Patch closing handles and runnng GC before reg unload' `n              `$newKey.Handle.close()` `n              [gc]::collect() `n                Start-Sleep -Seconds 15 ") }
 set-Content $updatePath $file
 
-.\Windows_VDOT.ps1 -Optimizations All -Verbose -AcceptEula
+.\Windows_VDOT.ps1 -Optimizations All -AdvancedOptimizations Edge, RemoveOneDrive -Verbose -AcceptEula
